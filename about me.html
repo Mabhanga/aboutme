@@ -3,47 +3,65 @@
 <head>
     <title>My Online CV</title>
     <style>
+        /* Define CSS variables for colors */
+        :root {
+            --dark-blue: #004080;
+            --blue: #0066cc;
+            --gray: #666666;
+            --background-color: #F0F0F0;
+            --font-color: #333333;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #F0F0F0;
-            color: #333333;
+            background-color: var(--background-color);
+            color: var(--font-color);
         }
+
         h1 {
-            color: #004080; /* Dark Blue */
+            color: var(--dark-blue);
             text-align: center;
         }
+
         h2 {
-            color: #0066cc; /* Blue */
+            color: var(--blue);
             margin-left: 20px;
         }
+
         p {
             margin-left: 40px;
-            color: #666666; /* Gray */
+            color: var(--gray);
         }
+
         ul {
             margin-left: 60px;
-            color: #666666; /* Gray */
+            color: var(--gray);
         }
+
         img {
             border-radius: 50%;
             width: 200px;
             height: 200px;
-            border: 4px solid #004080; /* Dark Blue */
+            border: 4px solid var(--dark-blue);
         }
+
         .contact {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .contact div {
             margin: 10px;
         }
+
         .contact a {
             text-decoration: none;
-            color: #004080; /* Dark Blue */
+            color: var(--dark-blue);
         }
+
         .contact a:hover {
-            color: #0066cc; /* Blue */
+            color: var(--blue);
         }
     </style>
 </head>
@@ -51,7 +69,7 @@
     <!-- Main header section -->
     <h1>My Online CV</h1>
     <!-- Profile picture -->
-    <img src="PIC.jpg" alt="PIC">
+    <img src="PIC.jpg" alt="Profile Picture">
     <!-- Contact information -->
     <div class="contact">
         <div>
